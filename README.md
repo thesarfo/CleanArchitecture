@@ -1,30 +1,28 @@
-# Clean Architecture Template
+### Clean Architecture Template
 
-What's included
+This is a modular .NET solution structured around **Domain-Driven Design (DDD)** principles, with a complete implementation of clean architecture layers:
 
-- SharedKernel project with common Domain-Driven Design abstractions.
-- Domain layer with sample entities.
-- Application layer with abstractions for:
-  - CQRS
-  - Example use cases
-  - Cross-cutting concerns (logging, validation)
-- Infrastructure layer with:
-  - Authentication
-  - Permission authorization
-  - EF Core, PostgreSQL
-  - Serilog
-- Seq for searching and analyzing structured logs
-  - Seq is available at http://localhost:8081 by default
-- Testing projects
-  - Architecture testing
+#### What's Included
 
-- Domain-Driven Design
-- Role-based authorization
-- Permission-based authorization
-- Distributed caching with Redis
-- OpenTelemetry
-- Outbox pattern
-- API Versioning
-- Unit testing
-- Functional testing
-- Integration testing
+* **SharedKernel**: Common DDD abstractions
+* **Domain Layer**: Sample entities and core domain logic
+* **Application Layer**:
+
+  * CQRS patterns
+  * Use case abstractions
+  * Cross-cutting concerns (logging, validation)
+* **Infrastructure Layer**:
+
+  * Authentication & permission-based authorization
+  * EF Core with PostgreSQL
+  * Structured logging with Serilog and Seq (`http://localhost:8081`)
+  * Distributed caching with Redis
+  * OpenTelemetry for observability
+  * Outbox pattern for reliable messaging
+* **API**:
+
+  * Versioning support
+* **Testing**:
+
+  * Unit, functional, and integration tests
+  * Architecture tests to enforce DDD boundaries
